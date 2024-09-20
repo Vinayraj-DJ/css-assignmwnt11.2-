@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        marquee{
+            background-color: pink;
+            font-size: 30px;
+        }
+        .md{
+           margin-left: 25%;
+            /* border: 3px solid black; */
+            /* margin-left: 5px; */
+            width: 50vw;
+            height: 50vh;
+            padding-top: 10px;
+          
+        }
+        /* laptap screen */
+        @media screen  and (min-width:760px){
+            .md{
+            gap: 10px;
+            display: grid;
+            grid-template-areas: 'area1 area2 area3'
+            'area1 area4 area5'
+           ' area6 area7 area8'
+           'area9 area7 area10';
+           
+        
+        }   
+        }
+        /* Tab screen */
+        @media screen and (min-width:375px) and (max-width:759px) {
+            .md{
+                gap: 10px;
+                display: grid;
+                grid-template-areas: 'area1 area2'
+                 'area3 area4' 'area5 area6' 'area7 area8' 'area9 area10';
+            }
+        }
+        .item1{
+            grid-area: area1;
+            
+        }
+        .item2{
+            grid-area: area2;
+        }
+        .item3{
+            grid-area: area3;
+        }
+        .item4{
+            grid-area: area4;
+        }
+        .item5{
+            grid-area: area5;
+        }
+        .item6{
+            grid-area: area6;
+        }
+        .item7{
+            grid-area: area7;
+        }
+        .item8{
+            grid-area: area8;
+        }
+        .item9{
+            grid-area: area9;
+        }
+        .item10{
+            grid-area: area10;
+        }
+        .item{
+            height: 100%;
+            width: 100%;
+            border-radius: 10%;
+        }
+    </style>
+</head>
+<body>
+    <marquee behavior="" direction="">Grid Template Areas Along Media Queries With Response</marquee>
+    <div class="md">
+        <img class="item item1" src="https://i.pinimg.com/736x/ac/67/57/ac6757080c847196a7b2f1ece1f715f2.jpg" >
+        <img class="item item2" src="https://t4.ftcdn.net/jpg/05/68/71/37/360_F_568713710_ASKh3LYbaagJK69wL6I1NmRsjtbcAbxH.jpg" alt="">
+        <img class="item item3" src="https://ih1.redbubble.net/image.1886732870.8071/flat,750x,075,f-pad,750x1000,f8f8f8.u2.jpg" alt="">
+        <img class="item item4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi325wBfH4t7_GZkRMKQolMfOJexR5FGQ98w&s" alt="">
+        <img class="item item5" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVZ89PXurD18PufpKPOxuqKRtQLNdktBujlw&s" alt="">
+        <img class="item item6" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKGjsi597RU0Ya7FATyeAKV5FBmyyBmv5bbg&s" alt="">
+        <img class="item item7" src="https://i.pinimg.com/736x/a1/ca/c3/a1cac3dbcb2a5d55ba1bf37630b52d57.jpg" alt="">
+        <img class="item item8" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-lwb9FL4iBRnbvkNnXMihZGa1Vdv9B8n8dw&s" alt="">
+        <img class="item item9" src="https://i.pinimg.com/736x/ac/67/57/ac6757080c847196a7b2f1ece1f715f2.jpg" >
+        <img class="item item10" src="https://t4.ftcdn.net/jpg/05/68/71/37/360_F_568713710_ASKh3LYbaagJK69wL6I1NmRsjtbcAbxH.jpg" alt="">
+       
+   
+    </div>
+</body>
+</html>
